@@ -1,0 +1,246 @@
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f6;
+    color: #26364a;
+    font-size: 14px;
+}
+
+
+/* PORTFÓLIO */
+
+.portfolio {
+    width: 850px;
+    max-width: 95%;
+    margin: 30px auto;
+    background: white;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: #23466d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+}
+
+
+/* CONTEÚDO */
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+
+/* COLUNA ESQUERDA */
+
+aside {
+    padding: 25px 20px;
+    border-right: 1px solid #b9c5d1;
+}
+
+.perfil {
+    width: 95px;
+    height: 95px;
+
+    display: block;
+    margin: 0 auto 15px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 2px solid #23466d;
+}
+
+aside h2 {
+    color: #23466d;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+aside h3 {
+    color: #23466d;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+aside p {
+    color: #596979;
+    margin-bottom: 5px;
+}
+
+aside ul {
+    padding-left: 17px;
+    color: #596979;
+}
+
+aside li {
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #c7d0d9;
+    margin: 12px 0;
+}
+
+.link {
+    color: #0879d1;
+    text-decoration: none;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+main {
+    padding: 20px 30px;
+}
+
+section {
+    margin-bottom: 18px;
+}
+
+section h2 {
+    color: #23466d;
+    font-size: 19px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c7d0d9;
+}
+
+section p {
+    line-height: 1.5;
+}
+
+
+/* TABELA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+th {
+    background: #e5ebf1;
+    text-align: left;
+    color: #33465a;
+}
+
+th,
+td {
+    border: 1px solid #aeb9c5;
+    padding: 6px;
+}
+
+
+/* FORMAÇÃO E EXPERIÊNCIA */
+
+.duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.duas-colunas section {
+    margin-bottom: 0;
+}
+
+.caixa {
+    background: #f3f6f9;
+    border-left: 4px solid #23466d;
+    padding: 10px;
+}
+
+.caixa strong {
+    color: #23466d;
+}
+
+.caixa p {
+    margin-top: 5px;
+}
+
+
+/* PROJECTOS */
+
+.projeto {
+    background: #f3f6f9;
+    border-left: 4px solid #23466d;
+    padding: 10px;
+}
+
+.projeto strong {
+    color: #23466d;
+}
+
+.projeto p {
+    margin-top: 5px;
+}
+
+.projeto a {
+    color: #0879d1;
+    text-decoration: none;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #edf2f7;
+    color: #68788a;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .portfolio {
+        width: 95%;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        border-right: none;
+        border-bottom: 1px solid #b9c5d1;
+        text-align: center;
+    }
+
+    aside ul {
+        list-style-position: inside;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .duas-colunas {
+        grid-template-columns: 1fr;
+    }
+}
